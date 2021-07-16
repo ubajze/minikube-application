@@ -5,7 +5,8 @@ metadata:
 spec:
   selector:
     app: webapp
+  type: NodePort
   ports:
     - protocol: TCP
-      port: 9100
+      nodePort: 9100
       targetPort: 80
